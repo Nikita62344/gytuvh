@@ -23,7 +23,7 @@ main_keyboard = VkKeyboard(one_time = True)  # <===
 main_keyboard.add_button('Об авторе')
 main_keyboard.add_button('Сделать пожертвование')
 main_keyboard.add_line()
-main_keyboard.add_button('Го каточку')
+main_keyboard.add_button('Давай сыгрем')
 
 main_keyboard.add_button('интересно сегодня ливень?')
 
@@ -44,7 +44,7 @@ donat_keyboard.add_line()
 donat_keyboard.add_button('Оплатить хостинг бота')
 donat_keyboard.add_line()
 donat_keyboard.add_button('Я передумал')
-send_message(515708291,"41")
+send_message(515708291,"хозяин, Я снова жив")
 # Работа с сообщениями
 longpoll = VkLongPoll(vk)
 # Основной цикл
@@ -79,7 +79,7 @@ for event in longpoll.listen():
                     send_message(user_id,"Добро пожаловать",main_keyboard)
                     #asdasd
                 elif text == 'Об авторе'.lower():
-                    send_message(user_id,"ne Damir",back_keyboard)
+                    send_message(user_id,"мой создатель Пенин Никита ",back_keyboard)
                 elif text == 'Сделать пожертвование'.lower():
                     send_message(user_id,"Выберите тип пожертвования",donat_keyboard)
                 elif text == 'Сыграть в игру'.lower():
