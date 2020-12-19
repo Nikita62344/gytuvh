@@ -35,6 +35,16 @@ game_over_keyboard.add_line()
 game_over_keyboard.add_button('ну попробуй(просто введи число)')
 
 gamers={}
+
+donat_keyboard = VkKeyboard(one_time = True)    #<1=====
+donat_keyboard.add_button('Помолиться за автора')
+donat_keyboard.add_line()
+donat_keyboard.add_button('Купить автору шаурму')
+donat_keyboard.add_line()
+donat_keyboard.add_button('Оплатить хостинг бота')
+donat_keyboard.add_line()
+donat_keyboard.add_button('Я передумал')
+
 # Работа с сообщениями
 longpoll = VkLongPoll(vk)
 # Основной цикл
