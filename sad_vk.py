@@ -23,9 +23,9 @@ main_keyboard = VkKeyboard(one_time = True)  # <===
 main_keyboard.add_button('Об авторе')
 main_keyboard.add_button('Сделать пожертвование')
 main_keyboard.add_line()
-main_keyboard.add_button('Давай сыгрем')
+main_keyboard.add_button('Сыграть в игру')
 
-main_keyboard.add_button('интересно сегодня ливень?')
+main_keyboard.add_button('узнать погоду')
 
 back_keyboard = VkKeyboard(one_time = True)
 back_keyboard.add_button('Назад')
